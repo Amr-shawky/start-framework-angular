@@ -17,7 +17,7 @@ fa-icon::before{
     top: 50%;
     transform: translateY(-50%);
     left: -95px;
-    z-index: 10;
+    z-index: 2;
 }
 fa-icon::after{
     content: '';
@@ -29,4 +29,8 @@ fa-icon::after{
     transform: translateY(-50%);
     right: -95px;
     z-index: 10;
+}
+.col a{
+    /* can clicked */
+    cursor: pointer;
 }

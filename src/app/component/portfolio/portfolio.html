@@ -1,45 +1,76 @@
 <div class="about position-relative">
   <div class="container">
     <!-- how i can center the content vertically and horizontally -->
-     <!-- that's don't work -->
+    <!-- that's don't work -->
 
-    <div class="text-center pt-4"> 
-        <h1 class="text-uppercase fw-bold">portfolio component</h1>
-        <div class="starseparator pb-2">
-          <fa-icon [icon]="faStar"></fa-icon>
+    <div class="text-center pt-4">
+      <h1 class="text-uppercase fw-bold">portfolio component</h1>
+      <div class="starseparator pb-2">
+        <fa-icon [icon]="faStar"></fa-icon>
+      </div>
+      <div
+        class="row row-cols-3 d-flex justify-content-center align-items-center g-5 pt-3 pb-4"
+      >
+        <div class="col">
+          <a
+            class="item rounded-2 overflow-hidden"
+            (click)="openImage('/portfolio/imgi_1_poert1.png')"
+          >
+            <img class="w-100" src="/portfolio/imgi_1_poert1.png" alt="" />
+          </a>
         </div>
-        <div class="row row-cols-3 d-flex justify-content-center align-items-center g-5 pt-3 pb-4">
-            <div class="col">
-                <div class="item rounded-2 overflow-hidden">
-                    <img class="w-100" src="/portfolio/imgi_1_poert1.png" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <div class="item rounded-2 overflow-hidden">
-                    <img class="w-100" src="/portfolio/imgi_2_port2.png" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <div class="item rounded-2 overflow-hidden">
-                    <img class="w-100" src="/portfolio/imgi_3_port3.png" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <div class="item rounded-2 overflow-hidden">
-                    <img class="w-100" src="/portfolio/imgi_1_poert1.png" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <div class="item rounded-2 overflow-hidden">
-                    <img class="w-100" src="/portfolio/imgi_2_port2.png" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <div class="item rounded-2 overflow-hidden">
-                    <img class="w-100" src="/portfolio/imgi_3_port3.png" alt="">
-                </div>
-            </div>
+        <div class="col">
+          <a
+            class="item rounded-2 overflow-hidden"
+            (click)="openImage('/portfolio/imgi_2_port2.png')"
+          >
+            <img class="w-100" src="/portfolio/imgi_2_port2.png" alt="" />
+          </a>
         </div>
+        <div class="col">
+          <a
+            class="item rounded-2 overflow-hidden"
+            (click)="openImage('/portfolio/imgi_3_port3.png')"
+          >
+            <img class="w-100" src="/portfolio/imgi_3_port3.png" alt="" />
+          </a>
+        </div>
+        <div class="col">
+          <a
+            class="item rounded-2 overflow-hidden"
+            (click)="openImage('/portfolio/imgi_1_poert1.png')"
+          >
+            <img class="w-100" src="/portfolio/imgi_1_poert1.png" alt="" />
+          </a>
+        </div>
+        <div class="col">
+          <a
+            class="item rounded-2 overflow-hidden"
+            (click)="openImage('/portfolio/imgi_2_port2.png')"
+          >
+            <img class="w-100" src="/portfolio/imgi_2_port2.png" alt="" />
+          </a>
+        </div>
+        <div class="col">
+          <a
+            class="item rounded-2 overflow-hidden"
+            (click)="openImage('/portfolio/imgi_3_port3.png')"
+          >
+            <img class="w-100" src="/portfolio/imgi_3_port3.png" alt="" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+<div *ngIf="currentImageSrc" 
+     (click)="closeImage()" 
+     class="currentimg bg-info bg-opacity-25 top-50 start-50 translate-middle position-fixed"
+     style="width: 200vh; height: 100vh; z-index: 300;">
+  <img (click)="$event.stopPropagation()"
+       [src]="currentImageSrc"
+       class="position-fixed top-50 start-50 translate-middle"
+       style="width: 90vh; height: 65vh; z-index: 300;" alt="">
+</div>
+
+
 </div>
