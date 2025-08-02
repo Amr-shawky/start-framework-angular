@@ -5,8 +5,8 @@ import { Contact } from './component/contact/contact';
 import { Portfolio } from './component/portfolio/portfolio';
 
 export const routes: Routes = [
-    { path: '', component: Home },
-    { path: 'about', component: About },
-    { path: 'contact', component: Contact },
-    { path: 'portfolio', component: Portfolio }
+    { path: '', component: Home , title: 'Home' },
+    { path: 'about', component: About , title: 'About' },
+    { path: 'contact', component: Contact , title: 'Contact' },
+    { path: 'portfolio', component: Portfolio , title: 'Portfolio' }
 ];
