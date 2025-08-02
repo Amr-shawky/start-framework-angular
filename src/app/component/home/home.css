@@ -3,7 +3,7 @@
 }
 header {
     background-color: var(--primary-color);
-    min-height: 540px;
+    min-height: 550px;
 }
 fa-icon {
     position: relative;
