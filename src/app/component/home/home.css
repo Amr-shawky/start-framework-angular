@@ -5,13 +5,28 @@ header {
     background-color: var(--primary-color);
     min-height: 540px;
 }
-.starseparator::before{
+fa-icon {
+    position: relative;
+}
+fa-icon::before{
     content: '';
     background-color: #fff !important;
-    height: 5px;
-    width: 50px;
+    height: 4px;
+    width: 80px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -95px;
+    z-index: 10;
+}
+fa-icon::after{
+    content: '';
+    background-color: #fff !important;
+    height: 4px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -95px;
     z-index: 10;
 }
