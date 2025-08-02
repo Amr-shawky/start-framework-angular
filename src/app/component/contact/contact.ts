@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [FontAwesomeModule],
   templateUrl: './contact.html',
   styleUrl: './contact.css'
 })
 export class Contact {
+  faStar = faStar;
 
 }

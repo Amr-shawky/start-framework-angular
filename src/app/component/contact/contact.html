@@ -1,1 +1,30 @@
-<p>contact works!</p>
+<div class="about position-relative">
+  <div class="container">
+    <!-- how i can center the content vertically and horizontally -->
+     <!-- that's don't work -->
+
+    <div class="text-center pt-4"> 
+        <h1 class="text-uppercase fw-bold">contact section</h1>
+        <div class="starseparator pb-2">
+          <fa-icon [icon]="faStar"></fa-icon>
+        </div>
+            <div class="form pt-5 pb-4 col-7 mx-auto">
+                <form>
+                    <div class="py-4">
+                        <input type="text" class="form-control py-2 border border-top-0 border-start-0" id="userName" placeholder="Enter your name">
+                    </div>
+                    <div class="py-4">
+                        <input type="number" class="form-control py-2 border border-top-0 border-start-0" id="userAge" placeholder="Enter your age">
+                    </div>
+                    <div class="py-4">
+                        <input type="email" class="form-control py-2 border border-top-0 border-start-0" id="userEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="py-4">
+                        <input type="password" class="form-control py-2 border border-top-0 border-start-0" id="userPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-success ">Send Message</button>
+                </form>
+        </div>
+    </div>
+  </div>
+</div>
