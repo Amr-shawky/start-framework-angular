@@ -1,0 +1,33 @@
+*{
+    --primary-color: #1ABC9C;
+}
+.about {
+    background-color: var(--primary-color);
+    min-height: 81vh;
+}
+
+fa-icon {
+    position: relative;
+}
+fa-icon::before{
+    content: '';
+    background-color: #fff !important;
+    height: 4px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -95px;
+    z-index: 10;
+}
+fa-icon::after{
+    content: '';
+    background-color: #fff !important;
+    height: 4px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -95px;
+    z-index: 10;
+}
