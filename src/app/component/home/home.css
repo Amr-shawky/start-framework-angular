@@ -1,0 +1,17 @@
+*{
+    --primary-color: #1ABC9C;
+}
+header {
+    background-color: var(--primary-color);
+    min-height: 540px;
+}
+.starseparator::before{
+    content: '';
+    background-color: #fff !important;
+    height: 5px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
